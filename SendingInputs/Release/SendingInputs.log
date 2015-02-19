@@ -1,9 +1,8 @@
-﻿Build started 2/18/2015 1:33:37 PM.
+﻿Build started 2/19/2015 1:00:50 AM.
      1>Project "C:\Users\tom_m_000\documents\visual studio 2013\Projects\SendingInputs\SendingInputs\SendingInputs.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>main.cpp(49): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tom_m_000\documents\visual studio 2013\Projects\SendingInputs\Release\SendingInputs.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\tom_m_000\documents\visual studio 2013\Projects\SendingInputs\Release\SendingInputs.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tom_m_000\documents\visual studio 2013\Projects\SendingInputs\Release\SendingInputs.lib" /MACHINE:X86 /SAFESEH Release\main.obj
          Generating code
@@ -13,4 +12,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.67
+Time Elapsed 00:00:01.53
