@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="typing.cpp">
+    <ClCompile Include="feedsplitbot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
