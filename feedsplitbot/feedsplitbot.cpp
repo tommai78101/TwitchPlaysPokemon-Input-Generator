@@ -18,7 +18,7 @@ CONTROLS:
 Q: Toggle Constant Feeding.
 E: Toggle Constant Splitting.
 Z: Quit Application.
-
+TILDE: Toggle Enable/Disable Bot.
 
 */
 
@@ -56,8 +56,10 @@ int main(){
 	bool feedFlag = false;
 	bool splitFlag = false;
 	bool quitFlag = false;
+	bool disableFlag = false;
 	HKL keyboardLayout = GetKeyboardLayout(0);
 	while (!quitFlag){
+		
 		if (GetKeyState(VkKeyScanEx('q', keyboardLayout)) & 0x8000){
 			feedFlag = !feedFlag;
 			system("cls");
@@ -72,17 +74,33 @@ int main(){
 		}
 		else if (GetKeyState(VkKeyScanEx('z', keyboardLayout)) & 0x8000) {
 			quitFlag = true;
-			Sleep(200);
 			continue;
 		}
-
-		if (feedFlag){
-			GenerateKey(VkKeyScanEx('w', keyboardLayout), false);
-			Sleep(50);
+		else if (GetKeyState(VkKeyScanEx('`', keyboardLayout)) & 0x8000) {
+			disableFlag = !disableFlag;
+			feedFlag = splitFlag = false;
+			system("cls");
+			if (disableFlag){
+				std::cout << "Disabled." << std::endl;
+			}
+			else {
+				std::cout << "Feed Flag: " << ((feedFlag) ? "TRUE" : "FALSE") << "    Split Flag: " << ((splitFlag) ? "TRUE" : "FALSE") << std::endl;
+			}
+			Sleep(200);
 		}
-		if (splitFlag){
-			GenerateKey(VkKeyScanEx(' ', keyboardLayout), false);
-			Sleep(50);
+
+		if (!disableFlag){
+			if (feedFlag){
+				GenerateKey(VkKeyScanEx('w', keyboardLayout), false);
+				Sleep(50);
+			}
+			if (splitFlag){
+				GenerateKey(VkKeyScanEx(' ', keyboardLayout), false);
+				Sleep(50);
+			}
+		}
+		else {
+			Sleep(1);
 		}
 	}
 	return 0;
