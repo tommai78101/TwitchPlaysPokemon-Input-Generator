@@ -53,6 +53,10 @@ void GenerateKey(short vk, bool extended){
 }
 
 int main(){
+	system("cls");
+	std::cout << "Press \"Q\" to enable auto-eject mass. " << std::endl;
+	std::cout << "Press \"E\" to enable auto-split. " << std::endl;
+	std::cout << "Press \"Z\" to quit. " << std::endl;
 	bool feedFlag = false;
 	bool splitFlag = false;
 	bool quitFlag = false;
