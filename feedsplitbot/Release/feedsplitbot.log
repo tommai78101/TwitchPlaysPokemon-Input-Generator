@@ -1,15 +1,5 @@
-﻿Build started 12/15/2015 12:56:40 AM.
-     1>Project "C:\Users\tlee2\Documents\Visual Studio 2013\Projects\TwitchPlaysPokemon-Input-Generator\feedsplitbot\feedsplitbot.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt feedsplitbot.cpp
-         feedsplitbot.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tlee2\Documents\Visual Studio 2013\Projects\TwitchPlaysPokemon-Input-Generator\Release\feedsplitbot.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\tlee2\Documents\Visual Studio 2013\Projects\TwitchPlaysPokemon-Input-Generator\Release\feedsplitbot.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tlee2\Documents\Visual Studio 2013\Projects\TwitchPlaysPokemon-Input-Generator\Release\feedsplitbot.lib" /MACHINE:X86 /SAFESEH Release\feedsplitbot.obj
-         Generating code
-         Finished generating code
-         feedsplitbot.vcxproj -> C:\Users\tlee2\Documents\Visual Studio 2013\Projects\TwitchPlaysPokemon-Input-Generator\Release\feedsplitbot.exe
-     1>Done Building Project "C:\Users\tlee2\Documents\Visual Studio 2013\Projects\TwitchPlaysPokemon-Input-Generator\feedsplitbot\feedsplitbot.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:01.21
+﻿  feedsplitbot.cpp
+  Generating code
+  All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  feedsplitbot.vcxproj -> C:\Users\tlee2\Desktop\TwitchPlaysPokemon-Input-Generator\Release\feedsplitbot.exe
