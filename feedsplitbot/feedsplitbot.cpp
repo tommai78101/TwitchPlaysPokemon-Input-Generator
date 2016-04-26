@@ -52,11 +52,15 @@ void GenerateKey(short vk, bool extended){
 	return;
 }
 
-int main(){
-	system("cls");
+void PrintInstructions() {
 	std::cout << "Press \"Q\" to enable auto-eject mass. " << std::endl;
 	std::cout << "Press \"E\" to enable auto-split. " << std::endl;
 	std::cout << "Press \"Z\" to quit. " << std::endl;
+}
+
+int main(){
+	system("cls");
+	PrintInstructions();
 	bool feedFlag = false;
 	bool splitFlag = false;
 	bool quitFlag = false;
@@ -67,12 +71,14 @@ int main(){
 		if (GetKeyState(VkKeyScanEx('q', keyboardLayout)) & 0x8000){
 			feedFlag = !feedFlag;
 			system("cls");
+			PrintInstructions();
 			std::cout << "Feed Flag: " << ((feedFlag) ? "TRUE" : "FALSE") << "    Split Flag: " << ((splitFlag) ? "TRUE" : "FALSE") << std::endl; 
 			Sleep(200);
 		}
 		else if (GetKeyState(VkKeyScanEx('e', keyboardLayout)) & 0x8000) {
 			splitFlag = !splitFlag;
 			system("cls");
+			PrintInstructions();
 			std::cout << "Feed Flag: " << ((feedFlag) ? "TRUE" : "FALSE") << "    Split Flag: " << ((splitFlag) ? "TRUE" : "FALSE") << std::endl;
 			Sleep(200);
 		}
@@ -84,6 +90,7 @@ int main(){
 			disableFlag = !disableFlag;
 			feedFlag = splitFlag = false;
 			system("cls");
+			PrintInstructions();
 			if (disableFlag){
 				std::cout << "Disabled." << std::endl;
 			}
